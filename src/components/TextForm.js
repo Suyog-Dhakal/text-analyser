@@ -20,6 +20,10 @@ export default function TextForm(props) {
     // console.log("onchange was clicked");
     setText(event.target.value);
   };
+  const handleClearAll = () => {
+    let newText = "";
+    setText(newText);
+  };
   const [text, setText] = useState("");
   return (
     <>
@@ -42,6 +46,9 @@ export default function TextForm(props) {
         </button>
         <button className="btn btn-primary mx-2" onClick={handleCapitalClick}>
           Capitalize first character
+        </button>
+        <button className="btn btn-primary mx-2" onClick={handleClearAll}>
+          Clear
         </button>
       </div>
       <div className="container my-3">
