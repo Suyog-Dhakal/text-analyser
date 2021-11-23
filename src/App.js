@@ -30,8 +30,8 @@ function App() {
   return (
     <>
       <Navbar
-        title="TextUtil2s"
-        aboutText="AboutTextUtils"
+        title="Text Analyzer"
+        aboutText="About"
         mode={mode}
         toggleMode={toggleMode}
       />
